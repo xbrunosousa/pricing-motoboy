@@ -1,0 +1,62 @@
+/*
+#mostrador{
+	margin-top: 10px;
+	width: 69.5%;
+	margin: 0 auto;
+}
+*/
+#aviso{
+	background: #3c3ebc;
+	color: #fff;
+	font-size: 1.2em;
+	width: 94.5%;
+	padding:5px 0 5px 5px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#mapa{
+	width: 94.5%;
+	height:18em;
+}
+
+/*#direcoes{
+	width: 69.5%;
+    text-align: justify;
+}*/
+
+form {
+    padding-bottom: 10px;
+}
+
+
+
+form #corrida1 {
+    
+}
+
+form input {
+    width: 94.5%;
+    font-size: 0.8em;
+    padding-bottom: 5px;
+}
+
+.botao_corrida {
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    font-size: 1.0em;
+}
+
+#corrida1 {
+    font-size: 1.2em;
+}
+
+body {
+    width: 100%;
+    height: auto;
+}
+
+
+
