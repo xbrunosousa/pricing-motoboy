@@ -9,10 +9,10 @@
 }
 */
 #aviso{
-	background: #3c3ebc;
+	background-color: #3c3ebc;
 	color: #fff;
 	font-size: 1.2em;
-	width: 94.5%;
+	width: 97%;
 	padding:5px 0 5px 5px;
     text-transform: uppercase;
     text-align: center;
@@ -20,8 +20,8 @@
 }
 
 #mapa{
-	width: 94.5%;
-	height:25em;
+	width: 97%;
+	height:20em;
 }
 
 /*#direcoes{
@@ -40,7 +40,7 @@ form #corrida1 {
 }
 
 form input {
-    width: 94.5%;
+    width: 97%;
     font-size: 0.8em;
     padding-bottom: 5px;
 }
@@ -60,8 +60,35 @@ form input {
 }
 
 body {
-    width: 100%;
+    width: 99%;
     height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    form imput {
+        font-size: 1.4em;
+    }
+    
+    #mapa {
+        width: 98%;
+        height: 18em;
+    }
+    
+    #corrida1 {
+        font-size: 1.8em;
+    }
+    
+    .botao_corrida {
+        font-size: 1.6em;
+    }
+    
+    form input {
+        font-size: 1.8em;
+    }
+    
+    #aviso {
+        font-size: 1.8em;
+    }
 }
 
 
