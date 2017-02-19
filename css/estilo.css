@@ -93,9 +93,13 @@ body {
         font-size: 2.3em;
     }
         
-        #mapa {
-            height: 50em;
-        }
+    #mapa {
+        height: 50em;
+    }
+        
+    body {
+        width: 97%;
+    }
 }
 
 
