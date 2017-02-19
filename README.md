@@ -1,4 +1,4 @@
-# http://brunoviniciusdev.github.io/calculofretemotoboy
+
 Bruno Vinícius</br>
 CNPJ 25.336.753/0001-01</br>
 contato@brunovinicius.me</br>
