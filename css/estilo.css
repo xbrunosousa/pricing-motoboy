@@ -92,6 +92,10 @@ body {
     #aviso {
         font-size: 1.8em;
     }
+        
+        #mapa {
+            height: 50em;
+        }
 }
 
 
