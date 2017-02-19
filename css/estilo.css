@@ -64,7 +64,7 @@ body {
     height: auto;
 }
 
-@media screen and (max-width: 925px) {
+@media screen and (max-width: 968px) {
     form imput {
         font-size: 1.4em;
     }
