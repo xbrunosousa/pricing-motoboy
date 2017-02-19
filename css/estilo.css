@@ -64,14 +64,18 @@ body {
     height: auto;
 }
 
-@media only screen 
-    and (min-device-width : 414px) 
-    and (max-device-width : 736px)
-    and (device-width : 414px)
-    and (device-height : 736px)
+
+    @media only screen 
+    and (min-device-width : 375px)
+    and (max-device-width : 667px)
+    and (width : 375px)
+    and (height : 559px)
     and (orientation : portrait) 
-    and (-webkit-min-device-pixel-ratio : 3) 
-    and (-webkit-device-pixel-ratio : 3) {
+    and (color : 8)
+    and (device-aspect-ratio : 375/667)
+    and (aspect-ratio : 375/559)
+    and (device-pixel-ratio : 2)
+    and (-webkit-min-device-pixel-ratio : 2) {
         
     form imput {
         font-size: 1.4em;
