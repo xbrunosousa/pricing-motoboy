@@ -83,6 +83,7 @@ body {
     
     .botao_corrida {
         font-size: 2.3em;
+        width: 100%;
     }
     
     form input {
