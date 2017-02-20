@@ -9,7 +9,7 @@ $(function(){
 			'locale': 'pt_BR',
 			'panel':'#direcoes'
 		}, function(result) {
-			preco = Math.ceil(result.getDistance().meters /1000 * 1.9 + 4);
+			preco = Math.ceil(result.getDistance().meters /1000 * 2.9 + 4);
 			$('#aviso').html("Preço aproximado: R$" + preco);
 	   });
 	   
