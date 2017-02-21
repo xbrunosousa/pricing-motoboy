@@ -22,6 +22,7 @@
 #mapa{
 	width: 97%;
 	height:20em;
+    display: none;
 }
 
 /*#direcoes{
@@ -75,6 +76,7 @@ body {
     #mapa {
         width: 98%;
         height: 18em;
+        display: none;
     }
     
     #corrida1 {
@@ -99,6 +101,7 @@ body {
     #mapa {
         height: 30em;
         width: 100%;
+        display: none;
     }
         
     body {
