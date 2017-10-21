@@ -2,9 +2,13 @@
 
 Price calculation by distance (freight, races and etc). Designed for Motoboys, but there are several other ways to use it! 😬
 
+```
+(uncomment lines 34 and 37 of index.html for display map and directions)
+```
+
 ## Demo
 
-In Portuguese <a href="https://brunovinicius.me/calculofretemotoboy" target="_blank">here</a>.
+In Portuguese, <a href="https://brunovinicius.me/calculofretemotoboy" target="_blank">here</a>.
 
 ### Author
 
