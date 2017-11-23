@@ -12,8 +12,8 @@ In Portuguese, <a href="https://brunovinicius.me/calculofretemotoboy" target="_b
 
 ### Author
 
-Bruno Vinícius :: <a href="mailto:contato@brunov.me" target="_blank">E-mail</a> / <a href="https://t.me/brunovme" target="_blank">Telegram</a> / <a href="https://fb.com/brunovme">Facebook</a>.
-
+Bruno Vinícius :: <a href="mailto:contato@brunov.me" target="_blank">E-mail</a> / <a href="https://t.me/brunovme" target="_blank">Telegram</a> / <a href="https://fb.com/brunovme">Facebook</a> / <a href="https://brunov.me" target="
+_blank">Website</a>.
 #### License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
