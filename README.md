@@ -8,7 +8,7 @@ Price calculation by distance (freight, races and etc). Designed for Motoboys, b
 
 ## Demo
 
-In Portuguese, <a href="https://brunov.me/calculofretemotoboy" target="_blank">here</a>.
+In Portuguese, <a href="https://xbrunosousa.github.io/pricing-motoboy/" target="_blank">here</a>.
 
 ### Author
 
