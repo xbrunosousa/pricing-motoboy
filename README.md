@@ -17,4 +17,3 @@ _blank">Website</a> / <a href="https://linkedin.com/in/brunovme" target="_blank"
 #### License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-
