@@ -1,19 +1,18 @@
 # Calculo Frete MotoBoy / Pricing Motoboy
 
-Price calculation by distance (freight, races and etc). Designed for Motoboys, but there are several other ways to use it! 😬
+### Script para calculo de preço para serviços de Motoboys de acordo com a distância. Desenvolvido em 2015 para cliente.
 
-```
-(uncomment lines 34 and 37 of index.html for display map and directions)
-```
+### v0.0.1
+
 
 ## Demo
 
-In Portuguese, <a href="https://xbrunosousa.github.io/pricing-motoboy/" target="_blank">here</a>.
+Demo online <a href="https://xbrunosousa.github.io/pricing-motoboy/" target="_blank">aqui</a>.
 
 ### Author
 
-Bruno Vinícius :: <a href="mailto:hi@bruno.vin" target="_blank">E-mail</a> / <a href="https://t.me/brunovme" target="_blank">Telegram</a> / <a href="https://fb.com/brunovme">Facebook</a> / <a href="https://brunov.me" target="
-_blank">Website</a> / <a href="https://linkedin.com/in/brunovme" target="_blank">LinkedIn</a>.
+<a href="https://github.com/xbrunosousa" target="_blank">Bruno Vinícius</a>
+
 #### License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
