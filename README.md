@@ -16,3 +16,4 @@ Demo online <a href="https://xbrunosousa.github.io/pricing-motoboy/" target="_bl
 #### License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
+Init v2 in React
