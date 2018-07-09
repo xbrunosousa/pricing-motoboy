@@ -1,20 +1,17 @@
+/* global google */
 import React from 'react'
 
 import { compose, withProps, lifecycle } from 'recompose'
 import { withGoogleMap, GoogleMap, DirectionsRenderer } from 'react-google-maps'
 
-const google = window.google
-
-this.state = {
-	distance: undefined
-}
+const keyGmaps = 'AIzaSyBZJDUkG83bcVMgdRoJPOotgt0v305l6W4'
 
 const Map = compose(
 	withProps({
-		googleMapURL: 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBZJDUkG83bcVMgdRoJPOotgt0v305l6W4&v=3.exp&libraries=geometry,drawing,places',
-		loadingElement: <div style={{ height: `50vh` }} />,
-		containerElement: <div style={{ height: `50vh` }} />,
-		mapElement: <div style={{ height: `50vh` }} />,
+		googleMapURL: `https://maps.googleapis.com/maps/api/js?key=${keyGmaps}&v=3.exp&libraries=geometry,drawing,places`,
+		loadingElement: <div style={{ height: '70vh' }} />,
+		containerElement: <div style={{ height: '70vh' }} />,
+		mapElement: <div style={{ height: '70vh' }} />
 	}),
 	withGoogleMap,
 	lifecycle({
@@ -22,8 +19,8 @@ const Map = compose(
 			const DirectionsService = new google.maps.DirectionsService()
 
 			DirectionsService.route({
-				origin: 'BRB, Planaltina DF',
-				destination: 'Condominio Arapoangas, Planaltina DF',
+				origin: this.props.origin,
+				destination: this.props.destination,
 				travelMode: google.maps.TravelMode.DRIVING,
 			}, (res, status) => {
 				if (status === google.maps.DirectionsStatus.OK) {
@@ -31,7 +28,7 @@ const Map = compose(
 						directions: res,
 						distance: res.routes[0].legs[0].distance.value
 					})
-					console.log(`${res.routes[0].legs[0].distance.value} metros`)
+					console.log(`${this.state.distance} metros`)
 				} else {
 					console.error(`error fetching directions ${res}`)
 				}
@@ -39,12 +36,18 @@ const Map = compose(
 		}
 	})
 )(props =>
-	<GoogleMap defaultZoom={5}>
-		{props.directions && <DirectionsRenderer directions={props.directions} />}
+	<GoogleMap defaultZoom={1}>
+		{
+			props.directions &&
+			<DirectionsRenderer
+				directions={props.directions}
+			/>
+		}
 
-		{props.distance !== undefined &&
-			<div>
-				<p>Distância entre os pontos: {props.distance} metros</p>
+		{
+			props.distance !== undefined &&
+			<div className='results'>
+				<p>Distância entre os pontos: {props.distance}m</p>
 				<p>Valor R${props.distance / 1000 * 1.9 + 5}</p>
 			</div>
 		}

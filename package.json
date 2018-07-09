@@ -1,19 +1,25 @@
 {
-  "name": "pricing-motoboy",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-scripts": "1.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
-  "devDependencies": {
-    "react-google-maps": "^9.4.5"
-  }
+	"name": "pricing-motoboy",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"gh-pages": "^1.2.0",
+		"react": "^16.4.1",
+		"react-dom": "^16.4.1",
+		"react-ga": "^2.5.3",
+		"react-scripts": "1.1.4",
+		"reactstrap": "^6.2.0"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test --env=jsdom",
+		"eject": "react-scripts eject",
+		"styles": "sass --watch src/components/App.scss:src/components/App.css --style compressed",
+		"predeploy": "yarn build",
+		"deploy": "gh-pages -d build"
+	},
+	"devDependencies": {
+		"react-google-maps": "^9.4.5"
+	}
 }
