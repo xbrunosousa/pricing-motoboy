@@ -2,6 +2,7 @@
 	"name": "pricing-motoboy",
 	"version": "0.1.0",
 	"private": true,
+	"homepage": "https://bruno.vin/pricing-motoboy",
 	"dependencies": {
 		"gh-pages": "^1.2.0",
 		"react": "^16.4.1",
