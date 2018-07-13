@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button, Col, InputGroup, Input, InputGroupText, InputGroupAddon } from 'reactstrap'
 
-const Form = ({ searchOrigin, searchDestination, calc, submitEnter }) => (
+const Form = ({ searchOrigin, searchDestination, calc, submitEnter, resetForm }) => (
 	<div className='Form'>
 		<Col sm={{ size: 6, offset: 3 }}>
 
@@ -13,8 +13,8 @@ const Form = ({ searchOrigin, searchDestination, calc, submitEnter }) => (
 
 				<Input
 					onChange={searchOrigin}
-					placeholder={'Insira o endereço de origem'}
 					onKeyDown={submitEnter}
+					placeholder='Insira o endereço de partida...'
 				/>
 
 			</InputGroup>
@@ -25,16 +25,15 @@ const Form = ({ searchOrigin, searchDestination, calc, submitEnter }) => (
 				<InputGroupAddon addonType="prepend">
 					<InputGroupText>Destino</InputGroupText>
 				</InputGroupAddon>
-
 				<Input
 					onChange={searchDestination}
-					placeholder={'Insira o endereço de destino'}
+					type='text'
 					onKeyDown={submitEnter}
+					placeholder='Insira o endereço de destino...'
 				/>
 			</InputGroup>
 
 			<br />
-
 			<Button color='primary' className='calc' onClick={calc}>Calcular</Button>
 		</Col>
 	</div>

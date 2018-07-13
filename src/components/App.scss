@@ -6,6 +6,11 @@
 @import './Form/Form';
 @import './Map/Map';
 
+body {
+	height: 100vh;
+	max-height: 100vh;
+}
+
 .mapa-xbs {
 	top: 0;
 	position: absolute;
@@ -22,4 +27,13 @@
 }
 .error-search, .success-search {
 	text-align: center;
+	z-index: 3;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+//maps
+.gm-style-mtc, .gmnoprint,  {
+	display: none;
 }

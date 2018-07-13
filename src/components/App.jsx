@@ -84,25 +84,25 @@ class App extends Component {
 					<div className='mapa-xbs'>
 						<Map
 							googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${keyGmaps}&v=3.exp&libraries=geometry,drawing,places`}
-							loadingElement={<div style={{ height: '70vh' }} />}
-							containerElement={<div style={{ height: '70vh' }} />}
-							mapElement={<div style={{ height: '70vh' }} />}
+							loadingElement={<div style={{ height: '100vh' }} />}
+							containerElement={<div style={{ height: '100vh' }} />}
+							mapElement={<div style={{ height: '100vh' }} />}
 							directions={this.state.directions}
 						/>
-						{this.state.distance >= 1 &&
-							<div>
-								<Alert className='success-search' color='success'>
-									Distância: {this.state.distance} km –
+					</div>
+					{this.state.distance >= 1 &&
+						<div>
+							<Alert className='success-search' color='success'>
+								Distância: {this.state.distance} km –
 								Valor total: {this.state.price.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</Alert>
 
-							</div>
-						}
-						{this.state.errorRequisition === true &&
-							<Alert className='error-search' color='danger'>Houve um erro. Verifique o endereço digitado</Alert>}
+						</div>
+					}
+					{this.state.errorRequisition === true &&
+						<Alert className='error-search' color='danger'>Houve um erro. Verifique o endereço digitado</Alert>}
 
-						{this.state.distance === 0 &&
-							<Alert className='error-search' color='danger'>A distância minima é de 1km!</Alert>}
-					</div>
+					{this.state.distance === 0 &&
+						<Alert className='error-search' color='danger'>A distância minima é de 1km!</Alert>}
 
 				</Container>
 

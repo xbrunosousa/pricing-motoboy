@@ -1,2 +1,2 @@
-.Form{z-index:1}.Form .calc{display:block;margin:0 auto}.results{text-align:center}.results .result-bellow-one{margin-top:20px}.mapa-xbs{top:0;position:absolute;z-index:1;width:100%;left:0}.Form{top:50px;z-index:2;position:absolute;left:0;width:100%}.error-search,.success-search{text-align:center}
+.Form{z-index:1}.Form .calc{display:block;margin:0 auto}.results{text-align:center}.results .result-bellow-one{margin-top:20px}body{height:100vh;max-height:100vh}.mapa-xbs{top:0;position:absolute;z-index:1;width:100%;left:0}.Form{top:50px;z-index:2;position:absolute;left:0;width:100%}.error-search,.success-search{text-align:center;z-index:3;position:absolute;bottom:0;left:0;width:100%}.gm-style-mtc,.gmnoprint{display:none}
 /*# sourceMappingURL=App.css.map */
