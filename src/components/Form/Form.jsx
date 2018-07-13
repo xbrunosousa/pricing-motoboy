@@ -1,10 +1,9 @@
 import React from 'react'
 import { Button, Col, InputGroup, Input, InputGroupText, InputGroupAddon } from 'reactstrap'
 
-const Form = ({ searchOrigin, searchDestination, calc, submitEnter, resetForm }) => (
+const Form = ({ searchOrigin, searchDestination, calc, submitEnter }) => (
 	<div className='Form'>
 		<Col sm={{ size: 6, offset: 3 }}>
-
 
 			<InputGroup>
 				<InputGroupAddon addonType="prepend">
@@ -25,6 +24,7 @@ const Form = ({ searchOrigin, searchDestination, calc, submitEnter, resetForm })
 				<InputGroupAddon addonType="prepend">
 					<InputGroupText>Destino</InputGroupText>
 				</InputGroupAddon>
+
 				<Input
 					onChange={searchDestination}
 					type='text'
@@ -34,7 +34,14 @@ const Form = ({ searchOrigin, searchDestination, calc, submitEnter, resetForm })
 			</InputGroup>
 
 			<br />
-			<Button color='primary' className='calc' onClick={calc}>Calcular</Button>
+
+			<Button
+				color='success'
+				className='calc'
+				onClick={calc}>
+				Calcular
+			</Button>
+
 		</Col>
 	</div>
 )
