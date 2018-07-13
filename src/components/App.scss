@@ -11,10 +11,15 @@
 	position: absolute;
 	z-index: 1;
 	width: 100%;
+	left: 0;
 }
 .Form {
 	top: 50px;
 	z-index: 2;
 	position: absolute;
+	left: 0;
 	width: 100%;
+}
+.error-search, .success-search {
+	text-align: center;
 }

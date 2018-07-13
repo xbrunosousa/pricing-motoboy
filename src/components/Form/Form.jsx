@@ -14,6 +14,7 @@ const Form = ({ searchOrigin, searchDestination, calc, submitEnter }) => (
 				<Input
 					onChange={searchOrigin}
 					placeholder={'Insira o endereço de origem'}
+					onKeyDown={submitEnter}
 				/>
 
 			</InputGroup>

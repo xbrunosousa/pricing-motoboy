@@ -1,9 +1,11 @@
+/* global google */
 import React, { Component } from 'react'
 import './App.css'
 import Map from './Map/Map'
 import Form from './Form/Form'
-import { Container } from 'reactstrap'
+import { Container, Alert } from 'reactstrap'
 import ReactGA from 'react-ga'
+import { directionsDefault } from './Map/defaultDirections'
 
 class App extends Component {
 	componentDidMount() {
@@ -14,23 +16,44 @@ class App extends Component {
 	constructor() {
 		super()
 		this.state = {
-			origin: undefined,
-			destination: undefined,
-			isSubmited: false
+			origin: 'Torre de TV, Brasília',
+			destination: 'Esplanada dos Ministérios',
+			isSubmited: false,
+			directions: directionsDefault,
+			distance: undefined
 		}
 	}
 	searchOrigin = (e) => {
 		const value = e.target.value
-		this.setState({ origin: value, isSubmited: false })
+		this.setState({ errorRequisition: false, origin: value, isSubmited: false })
 	}
 
 	searchDestination = (e) => {
 		const value = e.target.value
-		this.setState({ destination: value, isSubmited: false })
+		this.setState({ errorRequisition: false, destination: value, isSubmited: false })
 	}
 
 	calc = () => {
-		console.log('Botão "calcular" acionado')
+		const DirectionsService = new google.maps.DirectionsService()
+
+		DirectionsService.route({
+			origin: this.state.origin,
+			destination: this.state.destination,
+			travelMode: google.maps.TravelMode.DRIVING,
+		}, (res, status) => {
+			if (status === google.maps.DirectionsStatus.OK) {
+				this.setState({
+					directions: res,
+					distance: res.routes[0].legs[0].distance.value / 1000 | 0,
+					price: res.routes[0].legs[0].distance.value / 1000 * 1.9 + 3,
+					isSubmited: true
+				})
+			} else {
+				// console.error('Erro de requisição', res)
+				this.setState({ errorRequisition: true })
+
+			}
+		})
 		this.setState({
 			isSubmited: true
 		})
@@ -43,6 +66,7 @@ class App extends Component {
 	}
 
 	render() {
+		const keyGmaps = 'AIzaSyBZJDUkG83bcVMgdRoJPOotgt0v305l6W4'
 		return (
 			<div className='App'>
 				<Container fluid>
@@ -56,16 +80,32 @@ class App extends Component {
 
 					<br />
 
-					{this.state.isSubmited === true &&
-						<div className='mapa-xbs'>
-							<Map
-								origin={this.state.origin}
-								destination={this.state.destination}
-							/>
-						</div>
-					}
+
+					<div className='mapa-xbs'>
+						<Map
+							googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${keyGmaps}&v=3.exp&libraries=geometry,drawing,places`}
+							loadingElement={<div style={{ height: '70vh' }} />}
+							containerElement={<div style={{ height: '70vh' }} />}
+							mapElement={<div style={{ height: '70vh' }} />}
+							directions={this.state.directions}
+						/>
+						{this.state.distance >= 1 &&
+							<div>
+								<Alert className='success-search' color='success'>
+									Distância: {this.state.distance} km –
+								Valor total: {this.state.price.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</Alert>
+
+							</div>
+						}
+						{this.state.errorRequisition === true &&
+							<Alert className='error-search' color='danger'>Houve um erro. Verifique o endereço digitado</Alert>}
+
+						{this.state.distance === 0 &&
+							<Alert className='error-search' color='danger'>A distância minima é de 1km!</Alert>}
+					</div>
 
 				</Container>
+
 			</div>
 		)
 	}
