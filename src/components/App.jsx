@@ -70,8 +70,17 @@ class App extends Component {
             isSubmited: true
           });
         } else {
-          // console.error('Erro de requisição', res)
           this.setState({ errorRequisition: true });
+          toast.error(
+            'Houve um erro. Verifique o endereço digitado.',
+            this.state.toastDefaultProps
+          );
+        }
+        if (this.state.distance === 0) {
+          toast.error(
+            'A distância minima é de 1km!',
+            this.state.toastDefaultProps
+          );
         }
       }
     );
@@ -92,8 +101,6 @@ class App extends Component {
       directions,
       price,
       distance,
-      toastDefaultProps,
-      errorRequisition
     } = this.state;
     return (
       <div className="App">
@@ -124,15 +131,6 @@ class App extends Component {
               })}
             </Alert>
           )}
-
-          {errorRequisition &&
-            toast.error(
-              'Houve um erro. Verifique o endereço digitado.',
-              toastDefaultProps
-            )}
-
-          {distance === 0 &&
-            toast.error('A distância minima é de 1km!', toastDefaultProps)}
         </Container>
         <ToastContainer />
       </div>
