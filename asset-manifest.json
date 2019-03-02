@@ -1,6 +1,15 @@
 {
-  "main.css": "static/css/main.1278a051.css",
-  "main.css.map": "static/css/main.1278a051.css.map",
-  "main.js": "static/js/main.32859ef9.js",
-  "main.js.map": "static/js/main.32859ef9.js.map"
+  "main.css": "/pricing-motoboy/static/css/main.db9aa8db.chunk.css",
+  "main.js": "/pricing-motoboy/static/js/main.cfb457cf.chunk.js",
+  "main.js.map": "/pricing-motoboy/static/js/main.cfb457cf.chunk.js.map",
+  "runtime~main.js": "/pricing-motoboy/static/js/runtime~main.f824bdff.js",
+  "runtime~main.js.map": "/pricing-motoboy/static/js/runtime~main.f824bdff.js.map",
+  "static/css/2.6be311bc.chunk.css": "/pricing-motoboy/static/css/2.6be311bc.chunk.css",
+  "static/js/2.d3ad8063.chunk.js": "/pricing-motoboy/static/js/2.d3ad8063.chunk.js",
+  "static/js/2.d3ad8063.chunk.js.map": "/pricing-motoboy/static/js/2.d3ad8063.chunk.js.map",
+  "index.html": "/pricing-motoboy/index.html",
+  "precache-manifest.a0c99471d9c6a2c30f34c968f73ddb88.js": "/pricing-motoboy/precache-manifest.a0c99471d9c6a2c30f34c968f73ddb88.js",
+  "service-worker.js": "/pricing-motoboy/service-worker.js",
+  "static/css/2.6be311bc.chunk.css.map": "/pricing-motoboy/static/css/2.6be311bc.chunk.css.map",
+  "static/css/main.db9aa8db.chunk.css.map": "/pricing-motoboy/static/css/main.db9aa8db.chunk.css.map"
 }
