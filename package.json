@@ -1,31 +1,38 @@
 {
-	"name": "pricing-motoboy",
-	"version": "2.0.1",
-	"private": true,
-	"homepage": "https://bruno.vin/pricing-motoboy",
-	"author": {
-		"email": "mail@bruno.vin",
-		"name": "Bruno Vinícius"
-	},
-	"dependencies": {
-		"gh-pages": "^1.2.0",
-		"react": "^16.4.1",
-		"react-dom": "^16.4.1",
-		"react-ga": "^2.5.3",
-		"react-scripts": "1.1.4",
-		"react-toastify": "^4.2.0",
-		"reactstrap": "^6.2.0"
-	},
-	"scripts": {
-		"start": "react-scripts start",
-		"build": "react-scripts build",
-		"test": "react-scripts test --env=jsdom",
-		"eject": "react-scripts eject",
-		"styles": "sass --watch src/components/App.scss:src/components/App.css --style compressed",
-		"predeploy": "yarn build",
-		"deploy": "gh-pages -d build"
-	},
-	"devDependencies": {
-		"react-google-maps": "^9.4.5"
-	}
+  "name": "pricing-motoboy",
+  "version": "2.0.1",
+  "private": true,
+  "homepage": "https://projects.brunosousa.dev/pricing-motoboy",
+  "author": {
+    "email": "mail@bruno.vin",
+    "name": "Bruno Vinícius"
+  },
+  "dependencies": {
+    "gh-pages": "^1.2.0",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-ga": "^2.5.7",
+    "react-scripts": "2.1.5",
+    "react-toastify": "^4.5.2",
+    "reactstrap": "^7.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "bootstrap": "^4.3.1",
+    "node-sass": "^4.11.0",
+    "react-google-maps": "^9.4.5"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

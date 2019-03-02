@@ -1,0 +1,36 @@
+@import "./form";
+@import "./map";
+
+body {
+  height: 100vh;
+  max-height: 100vh;
+}
+
+.mapa-xbs {
+  top: 0;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  left: 0;
+}
+.Form {
+  top: 50px;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+.error-search,
+.success-search {
+  text-align: center;
+  z-index: 3;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+//maps
+.gm-style-mtc,
+.gmnoprint {
+  display: none;
+}
