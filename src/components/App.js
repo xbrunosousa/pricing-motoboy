@@ -1,26 +1,26 @@
-import React, { Component } from "react";
-import Map from "./Map";
-import Form from "./Form";
-import { Container, Alert } from "reactstrap";
-import ReactGA from "react-ga";
-import { directionsDefault } from "../partials/defaultDirections";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/scss/main.scss";
+import React, { Component } from 'react';
+import Map from './Map';
+import Form from './Form';
+import { Container, Alert } from 'reactstrap';
+import ReactGA from 'react-ga';
+import { directionsDefault } from '../partials/defaultDirections';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/scss/main.scss';
 
-class App extends Component {
+export default class App extends Component {
   constructor() {
     super();
     this.state = {
       toastDefaultProps: {
-        position: "top-right",
+        position: 'top-right',
         autoClose: 5000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
         draggable: true
       },
-      origin: "Torre de TV, Brasília",
-      destination: "Esplanada dos Ministérios",
+      origin: 'Torre de TV, Brasília',
+      destination: 'Esplanada dos Ministérios',
       isSubmited: false,
       directions: directionsDefault,
       distance: undefined
@@ -29,7 +29,7 @@ class App extends Component {
 
   componentDidMount() {
     // Google Analytics
-    ReactGA.initialize("UA-121994767-1");
+    ReactGA.initialize('UA-121994767-1');
     ReactGA.pageview(window.location.pathname + window.location.search);
   }
 
@@ -71,13 +71,13 @@ class App extends Component {
         } else {
           this.setState({ errorRequisition: true });
           toast.error(
-            "Houve um erro. Verifique o endereço digitado.",
+            'Houve um erro. Verifique o endereço digitado.',
             this.state.toastDefaultProps
           );
         }
         if (this.state.distance === 0) {
           toast.error(
-            "A distância minima é de 1km!",
+            'A distância minima é de 1km!',
             this.state.toastDefaultProps
           );
         }
@@ -89,16 +89,14 @@ class App extends Component {
   };
 
   submitEnter = e => {
-    if (e.keyCode === 13) {
-      this.calc();
-    }
+    if (e.keyCode === 13) this.calc();
   };
 
   render() {
-    const keyGmaps = "AIzaSyDhMg2q4LwSmoW_T04BGw_4jqdY-Asnqq0";
+    const keyGmaps = 'AIzaSyA__qL4C52y-VrqWEC3MPWkAV20EZJ5sVo';
     const { directions, price, distance } = this.state;
     return (
-      <div className="App">
+      <div className='App'>
         <Container fluid>
           <Form
             searchOrigin={e => this.searchOrigin(e)}
@@ -107,22 +105,22 @@ class App extends Component {
             submitEnter={e => this.submitEnter(e)}
           />
 
-          <div className="mapa-xbs">
+          <div className='mapa-xbs'>
             <Map
               googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${keyGmaps}&v=3.exp&libraries=geometry,drawing,places`}
-              loadingElement={<div style={{ height: "100vh" }} />}
-              containerElement={<div style={{ height: "100vh" }} />}
-              mapElement={<div style={{ height: "100vh" }} />}
+              loadingElement={<div style={{ height: '100vh' }} />}
+              containerElement={<div style={{ height: '100vh' }} />}
+              mapElement={<div style={{ height: '100vh' }} />}
               directions={directions}
             />
           </div>
 
           {distance >= 1 && (
-            <Alert className="success-search" color="success">
-              Distância: {distance} km – Valor total:{" "}
-              {price.toLocaleString("pt-br", {
-                style: "currency",
-                currency: "BRL"
+            <Alert className='success-search' color='success'>
+              Distância: {distance} km – Valor total:{' '}
+              {price.toLocaleString('pt-br', {
+                style: 'currency',
+                currency: 'BRL'
               })}
             </Alert>
           )}
@@ -132,5 +130,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;

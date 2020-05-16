@@ -1,20 +1,21 @@
 {
   "name": "pricing-motoboy",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "private": true,
   "homepage": "https://projects.brunosousa.dev/pricing-motoboy",
   "author": {
-    "email": "mail@bruno.vin",
-    "name": "Bruno Vinícius"
+    "email": "mail@brunosousa.dev",
+    "name": "Bruno Sousa"
   },
   "dependencies": {
-    "gh-pages": "^1.2.0",
-    "react": "^16.8.3",
-    "react-dom": "^16.8.3",
-    "react-ga": "^2.5.7",
-    "react-scripts": "2.1.5",
-    "react-toastify": "^4.5.2",
-    "reactstrap": "^7.1.0"
+    "@babel/runtime": "^7.9.6",
+    "gh-pages": "2.2.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-ga": "2.7.0",
+    "react-scripts": "3.4.1",
+    "react-toastify": "6.0.4",
+    "reactstrap": "8.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -25,9 +26,9 @@
     "deploy": "gh-pages -d build"
   },
   "devDependencies": {
-    "bootstrap": "^4.3.1",
-    "node-sass": "^4.11.0",
-    "react-google-maps": "^9.4.5"
+    "bootstrap": "4.5.0",
+    "node-sass": "4.14.1",
+    "react-google-maps": "9.4.5"
   },
   "browserslist": [
     ">0.2%",
