@@ -1,15 +1,25 @@
 {
-  "main.css": "/pricing-motoboy/static/css/main.db9aa8db.chunk.css",
-  "main.js": "/pricing-motoboy/static/js/main.cfb457cf.chunk.js",
-  "main.js.map": "/pricing-motoboy/static/js/main.cfb457cf.chunk.js.map",
-  "runtime~main.js": "/pricing-motoboy/static/js/runtime~main.f824bdff.js",
-  "runtime~main.js.map": "/pricing-motoboy/static/js/runtime~main.f824bdff.js.map",
-  "static/css/2.6be311bc.chunk.css": "/pricing-motoboy/static/css/2.6be311bc.chunk.css",
-  "static/js/2.d3ad8063.chunk.js": "/pricing-motoboy/static/js/2.d3ad8063.chunk.js",
-  "static/js/2.d3ad8063.chunk.js.map": "/pricing-motoboy/static/js/2.d3ad8063.chunk.js.map",
-  "index.html": "/pricing-motoboy/index.html",
-  "precache-manifest.a0c99471d9c6a2c30f34c968f73ddb88.js": "/pricing-motoboy/precache-manifest.a0c99471d9c6a2c30f34c968f73ddb88.js",
-  "service-worker.js": "/pricing-motoboy/service-worker.js",
-  "static/css/2.6be311bc.chunk.css.map": "/pricing-motoboy/static/css/2.6be311bc.chunk.css.map",
-  "static/css/main.db9aa8db.chunk.css.map": "/pricing-motoboy/static/css/main.db9aa8db.chunk.css.map"
+  "files": {
+    "main.css": "/pricing-motoboy/static/css/main.9fd8900d.chunk.css",
+    "main.js": "/pricing-motoboy/static/js/main.7dd7c7d4.chunk.js",
+    "main.js.map": "/pricing-motoboy/static/js/main.7dd7c7d4.chunk.js.map",
+    "runtime-main.js": "/pricing-motoboy/static/js/runtime-main.e0b20f5f.js",
+    "runtime-main.js.map": "/pricing-motoboy/static/js/runtime-main.e0b20f5f.js.map",
+    "static/css/2.efd39d59.chunk.css": "/pricing-motoboy/static/css/2.efd39d59.chunk.css",
+    "static/js/2.c2034657.chunk.js": "/pricing-motoboy/static/js/2.c2034657.chunk.js",
+    "static/js/2.c2034657.chunk.js.map": "/pricing-motoboy/static/js/2.c2034657.chunk.js.map",
+    "index.html": "/pricing-motoboy/index.html",
+    "precache-manifest.fee94e1589140e71536a6eec08c6f2d6.js": "/pricing-motoboy/precache-manifest.fee94e1589140e71536a6eec08c6f2d6.js",
+    "service-worker.js": "/pricing-motoboy/service-worker.js",
+    "static/css/2.efd39d59.chunk.css.map": "/pricing-motoboy/static/css/2.efd39d59.chunk.css.map",
+    "static/css/main.9fd8900d.chunk.css.map": "/pricing-motoboy/static/css/main.9fd8900d.chunk.css.map",
+    "static/js/2.c2034657.chunk.js.LICENSE.txt": "/pricing-motoboy/static/js/2.c2034657.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e0b20f5f.js",
+    "static/css/2.efd39d59.chunk.css",
+    "static/js/2.c2034657.chunk.js",
+    "static/css/main.9fd8900d.chunk.css",
+    "static/js/main.7dd7c7d4.chunk.js"
+  ]
 }
